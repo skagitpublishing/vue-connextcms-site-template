@@ -1,6 +1,7 @@
 # vue-connextcms-site-template
 
 > A Vue.js based site template for ConnextCMS
+**Note:** This repository is being developed and not ready for use.
 
 ## Build Setup
 
