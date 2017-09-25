@@ -1,6 +1,7 @@
 <template>
-  <div class="hello" style="border: 1px solid red;">
+  <div style="border: 1px solid red;">
     <h1>{{ msg }}</h1>
+  </div>
 </template>
 
 <script>

@@ -14,7 +14,7 @@
     name: 'app',
     components: {
       LeftMenu
-    },
+    }
   }
 </script>
 
