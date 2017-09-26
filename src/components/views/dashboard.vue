@@ -1,21 +1,16 @@
 <template>
-  <div style="border: 1px solid green;">
-    <dashboard></dashboard>
+  <div style="border: 1px solid cyan;">
+    <p>This is the dashboard</p>
   </div>
 </template>
 
 <script>
-  import dashboard from './views/dashboard'
-  
   export default {
-    name: 'active-content',
+    name: 'dashboard',
     data () {
       return {
-        msg: 'This is the active content.'
+        msg: 'This is the dashboard.'
       }
-    },
-    components: {
-      dashboard
     }
   }
 </script>
