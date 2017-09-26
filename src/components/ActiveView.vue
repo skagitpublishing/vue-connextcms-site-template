@@ -10,8 +10,8 @@
 </template>
 
 <script>
-  import contentHeader from './contentHeader';
-  import activeContent from './activeContent';
+  import contentHeader from './contentHeader'
+  import activeContent from './activeContent'
   
   export default {
     name: 'activeView',
