@@ -1,34 +1,30 @@
 <template>
-  <div class="hello" style="border: 1px solid blue;">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- content-header. Contains in-page navigation elements -->
+    <content-header></content-header>
+    <!-- active-content. The current view being displays renders here -->
+    <active-content></active-content>
   </div>
+  <!-- /.content-wrapper -->
 </template>
 
 <script>
-export default {
-  name: 'activeView',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import contentHeader from './components/contentHeader';
+  import activeContent from './components/activeContent';
+  
+  export default {
+    name: 'activeView',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    components: {
+      contentHeader,
+      activeContent
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
