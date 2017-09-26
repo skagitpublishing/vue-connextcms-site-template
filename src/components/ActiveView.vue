@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'activeView',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
