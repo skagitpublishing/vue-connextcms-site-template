@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'activeContent',
+    name: 'active-content',
     data () {
       return {
         msg: 'This is the active content.'

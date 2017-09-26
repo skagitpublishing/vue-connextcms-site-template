@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'contentHeader',
+  name: 'content-header',
   data () {
     return {
       msg: 'This is the content header'
