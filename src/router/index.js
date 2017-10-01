@@ -10,6 +10,12 @@ export default new Router({
       path: '/',
       name: 'ActiveView',
       component: ActiveView
-    }
+    },
+    {
+      path: '/appdashboard',
+      name: 'ActiveView',
+      component: ActiveView
+    },
+    
   ]
 })
