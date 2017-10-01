@@ -11,7 +11,7 @@ AdminLTE is an *awesome* Bootstrap-based dashboard. This repository packages the
 Vue.js components and then further processes the build output so that it's ready to copy to an installation of ConnextCMS as a site template.
 ConnextCMS/KeystoneJS can be used to serve and manage the content of your site, and the Vue.js app is available at the
 path `/appdashboard`. Each part (ConnextCMS and the Vue.js SPA) runs independently. This project is intended to speed 
-up development for people who need a CMS to manage a website and also need an area of the site
+up development for people who need a CMS to easily manage website content and also need an area of the site
 set aside for a sophisticated, modern single page application (SPA) using Vue.js.
 
 The Vue.js components in the site template are composed of the following:
@@ -25,7 +25,7 @@ They are arranged in the browser as illustrated in [this Wire Frame](https://wir
 ![vue component layout](component-layout.jpg?raw=true "vue component layout")
 
 ## Build Setup
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For detailed explanation on how the build commands work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ``` bash
 # install dependencies
@@ -54,12 +54,28 @@ npm test
 ```
 
 ## Installation
-Follow the instructions below to generate a ConnextCMS site template:
+Follow the instructions below to generate a ConnextCMS site template and serve your new site template through ConnextCMS.
+It is assumed you are building on server running Ubuntu Linux.
 
-1. After cloning this repository, run `npm install` to install dependencies and then `npm run connextcms` to build
-the ConnextCMS site template. 
-
-2. Install [docker-connextcms](https://github.com/skagitpublishing/docker-connextcms). The scripts in this repository
+1. Install [docker-connextcms](https://github.com/skagitpublishing/docker-connextcms). The scripts in this repository
 assume that the `docker-connextcms` directory is installed in your non-root user home directory, e.g. `~`
 
-3. 
+2. Install Node.js and NPM on your machine. [This tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04)
+shows how to install it on a Digital Ocean Droplet. The code in this repository has been tested against Node v6.x LTS.
+
+3. After cloning this repository, run `npm install` to install dependencies and then `npm run connextcms` to build
+the ConnextCMS site template. 
+
+4. Generate your site template by running the following script:
+`./generateSiteTemplate`
+
+5. Copy the site template into the `docker-connextcms/theme` directory by running the following script:
+`./uploadToConnextCMS`
+
+6. If the ConnextCMS docker container is running, bring it down by chaning directory into `~/docker-connextcms` and
+running the command `docker-compose down`. After that completes, bring it back up with `docker-compose up -d`. ConnextCMS
+will boot. The standard site template is available at port 3000. The Vue app is available at path `/appdashboard`. To
+bring it up in a webbrowser navigate to `http://xxx.xxx.xxx.xxx:3000/appdashboard`. Replace the x's with the IP
+address of your server.
+
+
