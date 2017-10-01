@@ -69,7 +69,7 @@ the ConnextCMS site template.
 4. Generate your site template by running the following script:
 `./generateSiteTemplate`
 
-5. Copy the site template into the `docker-connextcms/theme` directory by running the following script:
+5. Copy the site template into the `~/docker-connextcms/theme` directory by running the following script:
 `./uploadToConnextCMS`
 
 6. If the ConnextCMS docker container is running, bring it down by chaning directory into `~/docker-connextcms` and
