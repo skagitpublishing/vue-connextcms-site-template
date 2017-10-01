@@ -58,7 +58,7 @@ Follow the instructions below to generate a ConnextCMS site template and serve y
 It is assumed you are building on server running Ubuntu Linux.
 
 1. Install [docker-connextcms](https://github.com/skagitpublishing/docker-connextcms). The scripts in this repository
-assume that the `docker-connextcms` directory is installed in your non-root user home directory, e.g. `~`
+assume that the `docker-connextcms` repository is cloned in your non-root user home directory, e.g. `~`
 
 2. Install Node.js and NPM on your machine. [This tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04)
 shows how to install it on a Digital Ocean Droplet. The code in this repository has been tested against Node v6.x LTS.
@@ -67,9 +67,11 @@ shows how to install it on a Digital Ocean Droplet. The code in this repository 
 the ConnextCMS site template. 
 
 4. Generate your site template by running the following script:
+
 `./generateSiteTemplate`
 
 5. Copy the site template into the `docker-connextcms/theme` directory by running the following script:
+
 `./uploadToConnextCMS`
 
 6. If the ConnextCMS docker container is running, bring it down by chaning directory into `~/docker-connextcms` and
