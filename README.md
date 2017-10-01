@@ -1,7 +1,18 @@
 # vue-connextcms-site-template
 
 > A Vue.js based site template for ConnextCMS
-**Note:** This repository is being developed and not ready for use.
+
+This repository was generated from the [vuejs-template/webpack](https://github.com/vuejs-templates/webpack#vue-webpack-boilerplate) template.
+It generates a Vue.js SPA [site template](https://github.com/skagitpublishing/site-template-connextcms) for
+[ConnextCMS](http://connextcms.com/) based on the [AdminLTE](https://almsaeedstudio.com/) dashboard.
+It borrows inspiration from the [CoPilot](https://github.com/misterGF/CoPilot) project, but is generated separately.
+
+AdminLTE is an *awesome* Bootstrap-based dashboard. This repository packages the basic AdminLTE dashboard inside several
+Vue.js components and then further processes the build output so that it's ready to copy to an installation of ConnextCMS.
+ConnextCMS/KeystoneJS can be used to manage the content of your site, and the Vue.js app template is available at the
+path `/appdashboard`. Each part (ConnextCMS and the Vue.js SPA) runs independently. This project is intended to speed 
+up development for people who need a CMS to manage a website and also need an area of the site
+set aside for a sophisticated, modern single page application (SPA) using Vue.js.
 
 ## Build Setup
 
