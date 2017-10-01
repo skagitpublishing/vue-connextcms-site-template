@@ -3,4 +3,4 @@
 # of ConnextCMS on my dev server. It allows me to do rapid testing of code
 # chanages.
 
-cp -r connextcms-vue-app ~/test-connextcms/theme/
+cp -r connextcms-vue-app ~/docker-connextcms/theme/
