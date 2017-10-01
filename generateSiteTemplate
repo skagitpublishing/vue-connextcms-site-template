@@ -14,5 +14,6 @@ mkdir ../../connextcms-vue-app/public/static
 cp -r css ../../connextcms-vue-app/public/static/css
 cp -r img ../../connextcms-vue-app/public/static/img
 cp -r js ../../connextcms-vue-app/public/static/js
-
+cp -r fonts ../../connextcms-vue-app/public/static/fonts
+cp -r plugins ../../connextcms-vue-app/public/static/plugins
 echo "...Done!"
