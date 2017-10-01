@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#This script assumes that ConnextCMS is installed in the users home directory,
+#aliased with the ~ symbol. Edit the directory paths below if this assumption is invalid.
+
+echo Preparing to copy into myCMS directory...
+
+echo Copying Keystone Models
+cp keystone/models/*.js ~/myCMS/models/
+
+echo Copying Keystone API Routes
+cp keystone/routes/*.js ~/myCMS/routes/
+cp keystone/routes/api/*.js ~/myCMS/routes/api/
+cp keystone/routes/views/*.js ~/myCMS/routes/views/
+
+echo Copying Keystone Views
+cp keystone/templates/views/*.hbs ~/myCMS/templates/views/
+cp keystone/templates/views/layouts/*.hbs ~/myCMS/templates/views/layouts/
+
+#Customize the below .json files
+echo Copying settings.json files
+cp publicsettings.json ~/myCMS/public/js/
+cp privatesettings.json ~/myCMS/private/
+
+#THIS SHOULD BE LAST CODE BLOCK EXECUTED
+echo Copying public directory
+cp -rP public ~/myCMS/
+#For docker/nginx config, copy the public file to a directory accessibly by the host system
+cp -rP ~/myCMS/public ~/
